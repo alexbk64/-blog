@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+
+<!-- addentry.html
+     A form to add an entry to the blog
+     -->
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title> Add an entry to Alexander Kanouni&apos;s blog!
+      </title>
+      <style>
+          form label{
+              display: inline-block;
+              vertical-align: top;
+              width: 40px;
+          }
+        form{
+            width: 600px;
+        }
+          .top {
+                //position:absolute;
+                left:0; right:0;
+                height: 200px;
+                //background: blue;
+            }
+        
+        body
+        {
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding-left: 0;
+            padding-right: 0;
+            //background-color:green;
+        }
+        #content {
+            margin-top: 0;
+            margin-left: 140px;
+            margin-right: 360px;
+            //left:140px; top:200px; bottom: 0;
+            //width: 600px;
+           // background: red;
+            
+        }
+        #menu {
+            margin-top: 40px;
+            position: absolute;
+            top:200px; right:145px; bottom:0;
+            padding: 0px;
+            width: 200px;
+           // background: yellow;
+        }
+      </style>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="top">
+        <p align="center">
+        <img src="blogtitle.jpeg" alt="It is bad if you see this (error)" width="800" height="200" />
+        <br />
+        </p>
+        </div>
+      <div id="content">
+      <form action="addentry.php" method="get">
+          <p>
+            <h2> Add an entry to Alexander Kanouni&apos;s blog! </h2>
+          </p>
+        
+          <p>
+          Instructions: Enter a title and body for your blog entry. In the body, you can use simple HTML formatting elements, such as &lt;b&gt; (bold) and &lt;i&gt; (italic) as well as the hyperlink "anchor" element &lt;a&gt;.
+          </p>
+          <p>
+            <label>Title:</label> <input type="text" name = "title" size=40 />
+          </p>
+          <p>
+          <label>Body:</label> <textarea name="entry" rows="5" cols="40"></textarea>
+          </p>
+          <p>
+          <label> </label> <input type ="submit" name ="do it" value="Add Entry" />
+          <input type ="reset" value="Clear" />
+          </p>
+      </form>
+      </div>
+    <div id="menu">
+    </br>
+            <ul>
+                <li align="left"><a href="index.php">Home</a></li>
+                <li align="left"><a href="addentry.html">Archives</a></li>
+                <ul>
+                    <li align="left">August 2012</li>
+                    <li align="left">July 2012</li>
+                </ul>
+            </ul>
+            <form action="logout.php" method="get">
+                <input type="submit" name="do it" value="log out">
+    </div>
+  </body>
+</html>

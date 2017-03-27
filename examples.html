@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- helloworld.html
+     A trivial document
+     -->
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title> Alexander Kanouni's Blog </title>
+  </head>
+  <body>
+    <p align = "left"> 
+      <h3> Welcome to my blog! </h3>
+    </p>
+    
+    <!-- Unordered List -->
+    <p>
+    <h3> A simple unordered list</h3> <ul>
+        <li> List item one</li> <li> List item two</li> <li> List item three</li>
+    </ul>
+    </p>
+    
+    <!-- Ordered List -->
+    <p>
+    <h3> A simple ordered list</h3> <ol>
+        <li> List item one</li> <li> List item two</li> <li> List item three</li>
+    </ol>
+    </p>
+<!-- Images -->
+    <p>
+    <img src="images/japanese_castle.jpg" alt="It is bad if you see this (error)" width="300" height="200" />
+    <br />
+    A Japanese castle
+    </p>
+    <p>
+    <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAfUAAAAJDMzYmE5YmJjLTU5M2ItNDgwOS1hMGFlLWVkNDlmZDU5OWY3ZQ.jpg" alt="It is bad if you see this" width="200" height="200" />
+    <br />
+    A picture of me
+    </p>
+    <!-- Tables -->
+    <table border="2">
+        <caption>Table Example</caption>
+        <tr>
+        <th></th><th colspan="2">Grades</th>
+        </tr>
+        <tr>
+            <th>Student</th><th>Exam 1</th><th>Exam 2</th>
+        </tr>
+        <tr>
+            <td align="center">Sandy</td><td>78</td><td>92</td>
+        </tr>
+        <tr>
+            <td align="center">Taylor</td><td align="right" valign="bottom">83</td><td>73</td>
+        </tr>
+        
+        <!-- Cell spacing and padding example
+    <table>
+        <table border="3"> <caption>
+            Cellspacing and cellpadding attributes </caption>
+        <tr>
+            <th>cellspacing</th><th>cellpadding</th><th>Examples</th> </tr>
+        <tr align="center"> <td>10</td><td>10</td> <td>
+            <table border="1" cellspacing="10" cellpadding="10"> <tr>
+                width="300" width="300"
+                <td><img src="images/Edinburgh_Castle.jpg" alt="It is bad if you see this" height="200"></td>
+                <td><img src="images/chinese_castle.jpg" alt="It is bad if you see this" height="200"></td>
+            </tr>
+            </table> </td>
+        </tr>
+        <tr align="center">
+            <td>2</td><td>2</td> <td>
+                <table border="1" cellspacing="2" cellpadding="2"> <tr>
+                    width="300” width="300"
+                    <td><img src="images/Edinburgh_Castle.jpg" alt="It is bad if you see this" height="200"></td>
+                    <td><img src="images/chinese_castle.jpg" alt="It is bad if you see this" height="200"></td>
+                </tr>
+                </table> </td>
+        </tr>
+        </table> -->
+
+  </body>
+</html> <!-- end -->
+<!--<?php
+    
+    session_start();
+    
+    $username = "abk31"
+    $password = "Bornerand24"
+    
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+        header('Location: addentry.html');
+    }
+if (isset($_POST['username']) && isset($_POST['password'])) {
+    if ($_POST['username'] == $username && $_POST['password'] == $password) {
+        $_SESSION['loggedin'] = true;
+        header ('Location: addentry.html');
+    }
+    else {
+        print(<p>"try"</p>);
+    }
+} -->
