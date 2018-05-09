@@ -1,2 +1,2 @@
 # -blog
-FWT Coursework
+Fundamentals of Web Technology: Coursework
